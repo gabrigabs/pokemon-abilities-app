@@ -28,8 +28,12 @@ public class PokemonServiceImpl implements PokemonService {
                             .collect(Collectors.toList());
 
                     return PokemonAbilitiesResponseDTO.builder()
+                            .id(pokemon.getId())
                             .pokemonName(pokemon.getName())
                             .abilities(abilities)
+                            .cry(pokemon.getCries().getLatest())
+                            .artwork(pokemon.getSprites().getOther().getOfficialArtwork().getFrontDefault())
+                            .types(pokemon.getTypes().stream().map(typesDTO -> typesDTO.getType().getName()).collect(Collectors.toList()))
                             .build();
                 })
                 .onErrorResume(error -> Mono.error(new PokemonNotFoundException(name)));
