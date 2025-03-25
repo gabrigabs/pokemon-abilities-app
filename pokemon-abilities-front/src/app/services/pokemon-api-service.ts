@@ -1,7 +1,7 @@
 import { PokemonAbilitiesResponse } from "../types/pokemon-types";
 
 export async function getPokemonAbilities(name: string): Promise<PokemonAbilitiesResponse> {
-    const response = await fetch(`http://localhost:8080/api/pokemon/${name.toLowerCase()}`, {
+    const response = await fetch(`/api/pokemon/${name.toLowerCase()}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
