@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  pokemon-abilities-api:
+    build:
+      context: ./pokemon-abilities-api
+      dockerfile: Dockerfile
+    container_name: pokemon-abilities-api
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+      - JAVA_OPTS=-Xms256m -Xmx512m
+    restart: unless-stopped
+    networks:
+      - pokemon_network
+
+networks:
+  pokemon_network:
+    driver: bridge
