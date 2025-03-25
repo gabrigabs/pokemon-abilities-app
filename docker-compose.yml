@@ -15,6 +15,21 @@ services:
     networks:
       - pokemon_network
 
+  pokemon-abilities-front:
+    build:
+      context: ./pokemon-abilities-front
+      dockerfile: Dockerfile
+    container_name: pokemon-abilities-front
+    ports:
+      - "3000:3000"
+    depends_on:
+      - pokemon-abilities-api
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:8080
+    restart: unless-stopped
+    networks:
+      - pokemon_network
+
 networks:
   pokemon_network:
     driver: bridge

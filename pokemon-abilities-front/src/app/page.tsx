@@ -52,8 +52,8 @@ export default function Home() {
       } else {
         setPokemonData(null);
       }
-    } catch (err: Error | any) {
-      if(err.message === 'Pokemon not found') {
+    } catch (err: Error | unknown) {
+      if(err instanceof Error && err.message === 'Pokemon not found') {
         setError('Pokémon not found! Check the spelling and try again.');
       } else {
         setError('An error occurred while fetching the data. Please try again.');
