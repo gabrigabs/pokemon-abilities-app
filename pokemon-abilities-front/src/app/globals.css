@@ -40,3 +40,39 @@ h1, h2, h3, button {
   letter-spacing: -0.05em;
 }
 
+.pixel-text {
+  text-shadow: 2px 2px 0 #306230;
+  letter-spacing: 0.05em;
+}
+
+.pixelated {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+.retro-btn {
+  transition: all 0.1s ease;
+  box-shadow: 2px 2px 0 #0f380f;
+}
+
+.retro-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: none;
+}
+
+.retro-border-thin {
+  border: var(--border-thin) solid var(--border-color);
+}
+
+.retro-border-medium {
+  border: var(--border-medium) solid var(--border-color);
+}
+
+.retro-border-thick {
+  border: var(--border-thick) solid var(--border-color);
+}
+
+.retro-shadow {
+  box-shadow: 3px 3px 0 var(--shadow-color);
+}
