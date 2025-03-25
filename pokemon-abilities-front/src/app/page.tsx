@@ -96,7 +96,7 @@ export default function Home() {
         </div>
 
         <div className="max-w-md mx-auto mb-12 retro-border-medium rounded-lg bg-[#9bbc0f] p-4 retro-shadow">
-          <div className="relative flex flex-col">
+        <div className="relative flex flex-col">
             <p className="mb-2 font-bold">ENTER NAME:</p>
             <div className="flex">
               <input
@@ -128,6 +128,8 @@ export default function Home() {
             <div className="flex justify-between mt-4">
               <div className="w-6 h-6 rounded-full bg-[#ff0000] border-2 border-[#0f380f] shadow-inner"></div>
               <div className="grid grid-cols-2 gap-1">
+                <div className="w-3 h-1 bg-[#0f380f]"></div>
+                <div className="w-3 h-1 bg-[#0f380f]"></div>
               </div>
             </div>
           </div>
@@ -143,8 +145,8 @@ export default function Home() {
         {pokemonData && (
           <div className="max-w-3xl mx-auto retro-border-medium bg-[#9bbc0f] rounded-lg retro-shadow overflow-hidden">
             <div className="md:flex">
-              <div className="md:w-1/2 p-6 flex flex-col items-center justify-center relative bg-[#e0f8d0] border-r-4 border-[#0f380f]">
-                <div className="absolute top-2 left-2 text-[#0f380f] font-bold text-lg">
+            <div className="md:w-1/2 p-6 flex flex-col items-center justify-center relative bg-[#e0f8d0] border-r-4 border-[#0f380f]"> 
+              <div className="absolute top-2 left-2 text-[#0f380f] font-bold text-lg">
                   No.{pokemonData.id.toString().padStart(3, '0')}
                 </div>
                 <div className="relative">
@@ -168,7 +170,7 @@ export default function Home() {
                 <h2 className="text-2xl font-bold uppercase mb-3 border-b-4 border-[#0f380f] pb-1">
                   {pokemonData.pokemonName}
                 </h2>
-
+                
                 <div className="flex gap-2 mb-6">
                   {pokemonData.types.map((type) => (
                     <span
