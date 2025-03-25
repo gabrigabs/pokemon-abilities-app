@@ -113,7 +113,7 @@ export default function Home() {
                 onClick={searchPokemon}
                 disabled={isLoading}
                 className={`px-4 ml-2 bg-[#0f380f] text-[#9bbc0f] font-bold transition-all duration-300 
-                          shadow-[2px_2px_0px_#306230] active:shadow-none active:translate-x-[2px] active:translate-y-[2px]
+                          shadow-[2px_2px_0px_#306230] active:shadow-none active:translate-x-[3px] active:translate-y-[3px]
                           ${isLoading ? 'opacity-70' : 'hover:bg-[#306230]'}`}
               >
                 {isLoading ? (
@@ -159,8 +159,9 @@ export default function Home() {
                 </div>
                 <button
                   onClick={playCry}
-                  className="mt-4 px-4 py-2 bg-[#0f380f] text-[#9bbc0f] font-bold flex items-center
-                            shadow-[3px_3px_0px_#306230] active:shadow-none active:translate-x-[3px] active:translate-y-[3px]"
+                  className="mt-4 px-4 py-2 bg-[#0f380f] text-[#9bbc0f] font-bold flex items-center transition-all duration-300
+                  shadow-[2px_2px_0px_#306230] active:shadow-none active:translate-x-[3px] active:translate-y-[3px]
+                  hover:bg-[#306230]"
                 >
                   PLAY CRY
                 </button>
