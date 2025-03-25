@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import "tailwindcss";
+
+:root {
+  --background: #8bac0f;
+  --foreground: #0f380f;
+  --retro-font: 'Press Start 2P', monospace;
+  --retro-font-body: 'VT323', monospace;
+
+  --border-thin: 2px;
+  --border-medium: 4px;
+  --border-thick: 6px;
+  --border-color: #0f380f;
+  --shadow-color: #306230;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--retro-font-body);
+  --font-mono: var(--retro-font-body);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--retro-font-body);
+  image-rendering: pixelated;
+}
+
+h1, h2, h3, button {
+  font-family: var(--retro-font);
+  letter-spacing: -0.05em;
+}
+
+.pixel-text {
+  text-shadow: 2px 2px 0 #306230;
+  letter-spacing: 0.05em;
+}
+
+.pixelated {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+.retro-btn {
+  transition: all 0.1s ease;
+  box-shadow: 2px 2px 0 #0f380f;
+}
+
+.retro-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: none;
+}
+
+.retro-border-thin {
+  border: var(--border-thin) solid var(--border-color);
+}
+
+.retro-border-medium {
+  border: var(--border-medium) solid var(--border-color);
+}
+
+.retro-border-thick {
+  border: var(--border-thick) solid var(--border-color);
+}
+
+.retro-shadow {
+  box-shadow: 3px 3px 0 var(--shadow-color);
+}
