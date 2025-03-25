@@ -1,4 +1,4 @@
-package com.api.pokemonapi.dtos.responses;
+package com.api.pokemonapi.dtos.responses.ability;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
@@ -9,7 +9,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class AbilityDTO {
-
     @JsonProperty("ability")
     private AbilityDetailsDTO abilityDetails;
 

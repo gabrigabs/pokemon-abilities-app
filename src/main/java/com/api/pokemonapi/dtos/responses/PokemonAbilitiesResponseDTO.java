@@ -13,6 +13,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class PokemonAbilitiesResponseDTO {
 
+    private Long id;
     private String pokemonName;
     private List<String> abilities;
+    private String cry;
+    private String artwork;
+    private List<String> types;
 }
