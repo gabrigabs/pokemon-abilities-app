@@ -18,17 +18,18 @@ O Pokemon Abilities App é uma aplicação completa que consome a api publica Po
 - ![Tailwind](https://img.shields.io/badge/Tailwind_CSS-grey?style=for-the-badge&logo=tailwind-css&logoColor=38B2AC) 
 - ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
+## 🚀 Deploy
+
+O front-end da aplicação está hospedado [**aqui**](https://pokemon-abilities-app-production.up.railway.app)
+
+O back-end da aplicação está hospedado [**aqui**](https://backend-production-96a5.up.railway.app/api/pokemon/charmander)
+
 ## 🏗️ Arquitetura
 
 A aplicação está dividida em dois componentes principais:
 
 1. **pokemon-abilities-api**: Serviço backend em Spring Boot que fornece uma API RESTful para acessar dados de habilidades dos Pokémons consumindo a PokeAPI.
 2. **pokemon-abilities-front**: Interface de usuário em Next.js que consome a API e apresenta as habilidades do pokémon pesquisado.
-
-## 🚀 Deploy
-
-O front-end da aplicação está hospedado [aqui](https://pokemon-abilities-app-production.up.railway.app)
-O back-end da aplicação está hospedado [aqui](https://backend-production-96a5.up.railway.app/api/pokemon/charmander)
 
 ## 🔧 Pré-requisitos
 
