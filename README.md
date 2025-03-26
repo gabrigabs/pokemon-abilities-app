@@ -88,4 +88,7 @@ Para executar este projeto, você precisará:
     ```bash
     npm run dev
     ```
-4. Após isso, o frontend estará disponível por padrão em http://localhost:3000
+5. Após isso, o frontend estará disponível por padrão em http://localhost:3000
+
+## 🌐 Endpoints API
+* **/api/pokemon/{name}** - Retorna as habilidades do pokemon desejado 
